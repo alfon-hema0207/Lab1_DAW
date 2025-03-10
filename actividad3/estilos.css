@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos del encabezado */
+header {
+    text-align: center;
+    background: #6a4c9c; 
+    color: white;
+    padding: 20px;
+}
+
+header p {
+    width: 75%;
+    margin: auto;
+    font-size: 1em;
+}
+
+/* Barra de navegación */
+nav {
+    background: #4a90e2;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+}
+
+nav a:hover {
+    background: #333;
+}
+
+/* Estilos del aside */
+aside {
+    width: 200px;
+    background: #4a90e2;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 8px;
+}
+
+aside a:hover {
+    background: #333;
+}
+
+/* Contenido principal */
+main {
+    margin-left: 220px;
+    padding: 20px;
+    background: #f8f8f8;
+    flex: 1;
+}
+
+.noticia {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.noticia img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.noticia h2 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.noticia p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Estilos del footer */
+footer {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer .formu {
+    max-width: 400px;
+    margin: auto;
+    background: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer .formu label {
+    display: block;
+    font-size: 0.9em;
+    color: white;
+    margin-top: 5px;
+}
+
+footer .formu input, 
+footer .formu textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+footer .formu input[type="submit"] {
+    background-color: #6a4c9c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+}
+
+footer .formu input[type="submit"]:hover {
+    background-color: #5a3a8c;
+}
+
+footer .copyright {
+    font-size: 0.8em;
+    color: #bbb;
+    margin-top: 5px;
+}
