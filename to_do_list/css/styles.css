@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #badcff;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos del titulo */
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Estilos del boton para añadir y de la entrada de texto */
+input[type="text"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 250px;
+    margin-right: 10px;
+}
+
+button#agregarTarea {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    background-color: #bc00e2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+/* Cambia de color cuando ponemos el cursor encima */
+button#agregarTarea:hover {
+    background-color: #6d149c;
+}
+
+/* Lista de tareas */
+ul#listaTareas {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+ul#listaTareas li {
+    background-color: white;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+ul#listaTareas li:hover {
+    transform: scale(1.02);
+}
+
+/* Texto de tarea */
+ul#listaTareas li span {
+    flex: 1;
+    cursor: pointer;
+}
+
+/* Tarea completada */
+.completada {
+    text-decoration: line-through;
+    color: blue;
+}
+
+/* Botón eliminar */
+.eliminar-btn {
+    background-color: transparent;
+    border: none;
+    color: #e74c3c;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-left: 10px;
+}
+
+.eliminar-btn:hover {
+    color: #c0392b;
+}
