@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+body {
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 0.9em;
+  background: url(../images/art-background4.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: white;
+  padding: 20px 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 36px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0;
+}
+
+article {
+  position: absolute;
+  top: 180px;
+  left: 30px;
+  width: 420px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  border-radius: 2px;
+  padding: 0;
+}  
+
+article h2 {
+  margin: 0;
+  padding: 20px 20px 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+article p:nth-of-type(1) {
+  padding: 0 20px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+article p:nth-of-type(2) {
+  margin: 15px 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+footer {
+  background: rgba(255,255,255,0.9);
+  border-top: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: #009;
+  text-decoration: underline;
+}
+
+footer img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
